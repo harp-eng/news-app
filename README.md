@@ -36,4 +36,11 @@ npm run build
 ## Notes
 
 - Make sure the NewsAPI endpoint is accessible and your API key works.
+- Create an ignored `.env.local` file in the project root and set your key as:
+
+```bash
+REACT_APP_NEWS_API_KEY=your_api_key_here
+```
+
+- Do not commit `.env.local` to source control; it is already ignored by `.gitignore`.
 - You can customize the app by changing the API URL, page size, or component styling.

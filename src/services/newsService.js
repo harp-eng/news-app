@@ -1,5 +1,11 @@
 const API_BASE_URL = "https://newsapi.org/v2/top-headlines";
-const API_KEY = "b612678753c64e459e103771e6782a17";
+const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
+
+if (!API_KEY) {
+  throw new Error(
+    "Missing NewsAPI key. Set REACT_APP_NEWS_API_KEY in an .env.local file.",
+  );
+}
 
 export async function fetchTopHeadlines(
   page = 1,
