@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background: #f4f6fb;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+  color: #ffffff;
+  padding: 4.5rem 0 3.5rem;
+}
+
+.page-header .subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.page-header h1 {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 1rem;
+}
+
+.page-header .lead {
+  max-width: 38rem;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.news-section {
+  background: #f8f9ff;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.articles-status {
+  margin: 0;
+  color: #6c757d;
+}
+
+.news-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.news-card-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.news-meta {
+  font-size: 0.92rem;
+}
+
+.about-page {
+  padding: 4rem 0;
+}
+
+.about-hero {
+  margin-bottom: 2rem;
+}
+
+.about-kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0d6efd;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-feature {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
+}
+
+.about-number {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 576px) {
+  .page-header {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
   }
 }
