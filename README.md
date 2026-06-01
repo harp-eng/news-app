@@ -36,6 +36,7 @@ npm run build
 ## Notes
 
 - Make sure the NewsAPI endpoint is accessible and your API key works.
+- You can get a free API key by signing up at https://newsapi.org/docs/get-started.
 - Create an ignored `.env.local` file in the project root and set your key as:
 
 ```bash
